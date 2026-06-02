@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitap Detay | Kitap Dükkanım</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+
+<body>
+    <!-- ==================== NAVBAR ==================== -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar-icerik">
+                <a href="../index.html" class="navbar-logo">
+                    <img src="../img/kitapdükkanim.png" alt="Kitap Dükkanım Logo" class="site-logo">
+                </a>
+
+
+                <ul class="navbar-linkler">
+                    <li><a href="../index.html">Ana Sayfa</a></li>
+                    <li><a href="products.html">Kitaplar</a></li>
+                      <li><a href="product-detail.html?id=1" class="aktif-menu">Ürün Detay</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+
+                <a href="cart.html" class="navbar-sepet">
+                    Sepet (<span id="sepet-sayisi">0</span>)
+                </a>
+
+            </div>
+        </nav>
+    </header>
+    <!-- ==================== NAVBAR BİTTİ ==================== -->
+
+
+    <main>
+
+        <!-- ==================== KİTAP DETAY ==================== -->
+        <section class="kitap-detay">
+            <div class="kapsayici">
+
+                <div class="detay-icerik">
+                  
+                    <div class="detay-gorsel">
+                        <img src="../img/yüzüklerinEfendisi.webp" alt="Yüzüklerin Efendisi">
+                    </div>
+
+                    <!-- SAĞ — KİTAP BİLGİLERİ -->
+                    <div class="detay-bilgiler">
+
+                        <span class="kitap-turu">Fantastik</span>
+
+                        <h1 class="kitap-adi">Yüzüklerin Efendisi</h1>
+                           <p class="kitap-yazar">J.R.R. Tolkien</p>
+
+                        <div class="yildiz-puani">
+                            <span>★★★★★</span>
+                            <p>(248 değerlendirme)</p>
+                        </div>
+
+                        <p class="detay-fiyat">345 ₺</p>
+
+                        <!-- KİTAP AÇIKLAMASI -->
+                        <p class="detay-aciklama">
+                            Orta Dünya'da geçen bu destansı roman, iyilik ve kötülük arasındaki
+                            büyük mücadeleyi anlatır. Hobbit Frodo Baggins, Yüzüğü yok etmek için
+                            tehlikeli bir yolculuğa çıkar. Tüm zamanların en çok okunan fantasy
+                            serisidir.
+                        </p>
+
+                        <!-- KİTAP BİLGİLERİ TABLOSU -->
+                        <div class="kitap-bilgileri">
+
+                            <div class="bilgi-satiri">
+                                <span class="bilgi-etiket">Yayınevi</span>
+                                <span class="bilgi-deger">Metis Yayınları</span>
+                            </div>
+
+                            <div class="bilgi-satiri">
+                                <span class="bilgi-etiket">Sayfa Sayısı</span>
+                                <span class="bilgi-deger">1200</span>
+                            </div>
+
+                            <div class="bilgi-satiri">
+                                <span class="bilgi-etiket">Dil</span>
+                                <span class="bilgi-deger">Türkçe</span>
+                            </div>
+
+                            <div class="bilgi-satiri">
+                                <span class="bilgi-etiket">ISBN</span>
+                                <span class="bilgi-deger">978-975-342-XXX-X</span>
+                            </div>
+
+                        </div>
+
+                        <!-- ADET SEÇİCİ -->
+                        <div class="adet-secici">
+                            <span>Adet:</span>
+
+                            <div class="adet-kontrol">
+                                <button type="button" id="adet-azalt-btn">−</button>
+
+                                <span id="adet-goster">1</span>
+
+                                <button type="button" id="adet-arttir-btn">+</button>
+                            </div>
+                        </div>
+
+                        <!-- BUTONLAR -->
+                        <div class="detay-butonlar">
+                            <button class="buton buton-ana sepete-ekle-btn" id="detay-sepete-ekle" type="button">
+                                Sepete Ekle
+                            </button>
+                           
+                        </div>
+
+                    </div>
+                 
+                </div>
+                   </div>
+           
+        </section>
+         <!-- ==================== ÖNERİLEN KİTAPLAR ==================== -->
+        <section class="onerilen-kitaplar">
+            <div class="kapsayici">
+
+                <h2>Bunlar da İlgini Çekebilir</h2>
+
+                <div class="kitaplar-grid">
+
+                    <div class="kitap-karti">
+                        <div class="kitap-karti-gorsel">
+                            <img src="../img/harrypotter.jpeg" alt="Harry Potter">
+                        </div>
+                        <div class="kitap-karti-icerik">
+                            <span class="kitap-turu">Fantastik</span>
+                            <h3 class="kitap-adi">Harry Potter ve Felsefe Taşı</h3>
+                            <p class="kitap-yazar">J.K. Rowling</p>
+                            <p class="kitap-fiyat">375 ₺</p>
+                            <a href="product-detail.html?id=7" class="buton buton-ikincil">İncele</a>
+                        </div>
+                    </div>
+
+                    <div class="kitap-karti">
+                        <div class="kitap-karti-gorsel">
+                            <img src="../img/dune_.jpg" alt="Dune">
+                        </div>
+                        <div class="kitap-karti-icerik">
+                            <span class="kitap-turu">Bilim Kurgu</span>
+                            <h3 class="kitap-adi">Dune</h3>
+                            <p class="kitap-yazar">Frank Herbert</p>
+                            <p class="kitap-fiyat">285 ₺</p>
+                            <a href="product-detail.html?id=3" class="buton buton-ikincil">İncele</a>
+                        </div>
+                    </div>
+
+                    <div class="kitap-karti">
+                        <div class="kitap-karti-gorsel">
+                            <img src="../img/solaris.jpg" alt="Solaris">
+                        </div>
+                        <div class="kitap-karti-icerik">
+                            <span class="kitap-turu">Bilim Kurgu</span>
+                            <h3 class="kitap-adi">Solaris</h3>
+                            <p class="kitap-yazar">Stanislaw Lem</p>
+                            <p class="kitap-fiyat">410 ₺</p>
+                            <a href="product-detail.html?id=9" class="buton buton-ikincil">İncele</a>
+                        </div>
+                    </div>
+
+                    <div class="kitap-karti">
+                        <div class="kitap-karti-gorsel">
+                            <img src="../img/alacakaranlık.jpeg" alt="Alacakaranlık">
+                        </div>
+                        <div class="kitap-karti-icerik">
+                            <span class="kitap-turu">Romantik</span>
+                            <h3 class="kitap-adi">Alacakaranlık</h3>
+                            <p class="kitap-yazar">Stephenie Meyer</p>
+                            <p class="kitap-fiyat">420 ₺</p>
+                            <a href="product-detail.html?id=6" class="buton buton-ikincil">İncele</a>
+                        </div>
+                    </div>
+
+                </div>
+             </div>
+           
+        </section>
+       </main>
+<!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="footer-icerik">
+
+            <div class="footer-marka">
+                <span class="footer-logo">Kitap Dükkanım</span>
+                <p>En iyi kitaplar, en iyi fiyatlarla.</p>
+            </div>
+
+            <div class="footer-linkler">
+                <a href="../index.html">Ana Sayfa</a>
+                <a href="products.html">Kitaplar</a>
+                <a href="contact.html">İletişim</a>
+            </div>
+
+            <div class="footer-telif">
+                <p>&copy; 2025 KitapDükkanım. Tüm hakları saklıdır.</p>
+            </div>
+
+        </div>
+    </footer>
+    <!-- ==================== FOOTER BİTTİ ==================== -->
+
+
+    <script src="../scripts/myscript.js"></script>
+</body>
+
+</html>

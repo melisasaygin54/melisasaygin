@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitaplar | Kitap Dükkanım</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-icerik">
+
+                <a href="../index.html" class="navbar-logo">
+                    <img src="../img/kitapdükkanim.png" alt="Kitap Dükkanım Logo" class="site-logo">
+                </a>
+
+                <ul class="navbar-linkler">
+                    <li><a href="../index.html">Ana Sayfa</a></li>
+                    <li><a href="products.html" class="aktif-menu">Kitaplar</a></li>
+                    <li><a href="product-detail.html?id=1">Ürün Detay</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                 </ul>
+
+                <a href="cart.html" class="navbar-sepet">
+                    Sepet (<span id="sepet-sayisi">0</span>)
+                </a>
+  </div>
+        </nav>
+    </header>
+    <main>
+
+        <!-- ==================== SAYFA BAŞLIĞI ==================== -->
+        <section class="sayfa-basligi">
+            <div class="kapsayici">
+                <h1>Kitaplar</h1>
+                <p>Tüm kitaplarımıza göz atın, türe göre filtreleyin.</p>
+            </div>
+        </section>
+
+        <!-- ==================== KİTAP LİSTESİ ==================== -->
+        <section class="kitap-listesi">
+            <div class="kapsayici">
+
+                <div class="liste-icerik">
+                  <!-- SOL — FİLTRE -->
+                    <aside class="filtre-bolumu">
+                        <h3>Türe Göre Filtrele</h3>
+
+                        <ul class="filtre-listesi">
+                            <li>
+                                <input type="checkbox" id="fantastik" value="Fantastik">
+                                <label for="fantastik">Fantastik</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="bilimkurgu" value="Bilim Kurgu">
+                                <label for="bilimkurgu">Bilim Kurgu</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="distopya" value="Distopya">
+                                <label for="distopya">Distopya</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="romantik" value="Romantik">
+                                <label for="romantik">Romantik</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="turkklasigi" value="Türk Klasiği">
+                                <label for="turkklasigi">Türk Klasiği</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="dram" value="Dram">
+                                <label for="dram">Dram</label>
+                            </li>
+                        </ul>
+                    </aside>
+                    <!-- SOL FİLTRE BİTTİ -->
+
+
+                    <!-- SAĞ — KİTAPLAR -->
+                    <div class="kitaplar-alani">
+
+                        <div class="siralama-bar">
+                            <p class="kitap-sayisi">12 kitap listeleniyor</p>
+                        </div>
+
+                        <div class="kitaplar-grid">
+                            <!-- KİTAP 1 -->
+                            <div class="kitap-karti">
+                                <div class="kitap-karti-gorsel">
+
+                                    <img src="../img/yüzüklerinEfendisi.webp" alt="Yüzüklerin Efendisi">
+
+                                </div>
+                                <div class="kitap-karti-icerik">
+                                    <span class="kitap-turu">Fantastik</span>
+                                    <h3 class="kitap-adi">Yüzüklerin Efendisi</h3>
+                                    <p class="kitap-yazar">J.R.R. Tolkien</p>
+                                    <p class="kitap-fiyat">345 ₺</p>
+                                    <div class="karti-butonlar">
+                                        <a href="product-detail.html?id=1" class="buton buton-ikincil">İncele</a>
+
+                                        <button class="buton buton-ana sepete-ekle-btn" data-ad="Yüzüklerin Efendisi"
+                                            data-fiyat="345">
+                                            Sepete Ekle
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- KİTAP 2 -->
+                            <div class="kitap-karti">
+                                <div class="kitap-karti-gorsel">
+
+                                    <img src="../img/1984_.jpg" alt="1984">
+
+                                </div>
+                                <div class="kitap-karti-icerik">
+                                    <span class="kitap-turu">Distopya</span>
+                                    <h3 class="kitap-adi">1984</h3>
+                                    <p class="kitap-yazar">George Orwell</p>
+                                    <p class="kitap-fiyat">380 ₺</p>
+                                    <div class="karti-butonlar">
+                                        <a href="product-detail.html?id=2" class="buton buton-ikincil">İncele</a>
+                                        <button class="buton buton-ana sepete-ekle-btn" data-ad="1984" data-fiyat="380">
+                                            Sepete Ekle
+                                        </button>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- KİTAP 3 -->
+                            <div class="kitap-karti">
+                                <div class="kitap-karti-gorsel">
+
+                                    <img src="../img/dune_.jpg" alt="Dune">
+
+                                </div>
+                                <div class="kitap-karti-icerik">
+                                    <span class="kitap-turu">Bilim Kurgu</span>
+                                    <h3 class="kitap-adi">Dune</h3>
+                                    <p class="kitap-yazar">Frank Herbert</p>
+                                    <p class="kitap-fiyat">285 ₺</p>
+                                    <div class="karti-butonlar">
+                                        <a href="product-detail.html?id=3" class="buton buton-ikincil">İncele</a>
+
+                                        <button class="buton buton-ana sepete-ekle-btn" data-ad="Dune" data-fiyat="285">
+                                            Sepete Ekle
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- KİTAP 4 -->
+                            <div class="kitap-karti">
+                                <div class="kitap-karti-gorsel">
+
+                                    <img src="../img/tutunamayanlar_.jpg" alt="Tutunamayanlar">
+
+                                </div>
+                                <div class="kitap-karti-icerik">
+                                    <span class="kitap-turu">Türk Klasiği</span>
+                                    <h3 class="kitap-adi">Tutunamayanlar</h3>
+                                    <p class="kitap-yazar">Oğuz Atay</p>
+                                    <p class="kitap-fiyat">190 ₺</p>
+                                    <div class="karti-butonlar">
+
+                                        <a href="product-detail.html?id=4" class="buton buton-ikincil">İncele</a>
+                                        <button class="buton buton-ana sepete-ekle-btn" data-ad="Tutunamayanlar"
+                                            data-fiyat="190">
+                                            Sepete Ekle
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- KİTAP 5 -->
+                            <div class="kitap-karti">
+                                <div class="kitap-karti-gorsel">
+
+                                    <img src="../img/huzur.jpeg" alt="Huzur">
+
+                                </div>
+                                <div class="kitap-karti-icerik">
+                                    <span class="kitap-turu">Türk Klasiği</span>
+                                    <h3 class="kitap-adi">Huzur</h3>
+                                    <p class="kitap-yazar">Ahmet Hamdi Tanpınar</p>
+                                    <p class="kitap-fiyat">220 ₺</p>
+                                    <div class="karti-butonlar">
+                                        <a href="product-detail.html?id=5" class="buton buton-ikincil">İncele</a>
+
+                                        <button class="buton buton-ana sepete-ekle-btn" data-ad="Huzur"
+                                            data-fiyat="220">
+                                            Sepete Ekle
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- KİTAP 6 -->
+                            <div class="kitap-karti">
+                                <div class="kitap-karti-gorsel">
+
+                                    <img src="../img/alacakaranlık.jpeg" alt="Alacakaranlık">
+
+                                </div>
+                                <div class="kitap-karti-icerik">
+                                    <span class="kitap-turu">Romantik</span>
+                                    <h3 class="kitap-adi">Alacakaranlık</h3>
+                                    <p class="kitap-yazar">Stephenie Meyer</p>
+                                    <p class="kitap-fiyat">420 ₺</p>
+                                    <div class="karti-butonlar">
+                                        <a href="product-detail.html?id=6" class="buton buton-ikincil">İncele</a>
+
+                                        <button class="buton buton-ana sepete-ekle-btn" data-ad="Alacakaranlık"
+                                            data-fiyat="420">
+                                            Sepete Ekle
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- KİTAP 7 -->
+                            <div class="kitap-karti">
+                                <div class="kitap-karti-gorsel">
+
+                                    <img src="../img/harrypotter.jpeg" alt="Harry Potter ve Felsefe Taşı">
+
+                                </div>
+                                <div class="kitap-karti-icerik">
+                                    <span class="kitap-turu">Fantastik</span>
+                                    <h3 class="kitap-adi">Harry Potter ve Felsefe Taşı</h3>
+                                    <p class="kitap-yazar">J.K. Rowling</p>
+                                    <p class="kitap-fiyat">375 ₺</p>
+                                    <div class="karti-butonlar">
+                                        <a href="product-detail.html?id=7" class="buton buton-ikincil">İncele</a>
+
+                                        <button class="buton buton-ana sepete-ekle-btn"
+                                            data-ad="Harry Potter ve Felsefe Taşı" data-fiyat="375">
+                                            Sepete Ekle
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- KİTAP 8 -->
+                            <div class="kitap-karti">
+                                <div class="kitap-karti-gorsel">
+
+                                    <img src="../img/arabasevdasi.jpg" alt="Araba Sevdası">
+
+                                </div>
+                                <div class="kitap-karti-icerik">
+                                    <span class="kitap-turu">Türk Klasiği</span>
+                                    <h3 class="kitap-adi">Araba Sevdası</h3>
+                                    <p class="kitap-yazar">Recaizade Mahmut Ekrem</p>
+                                    <p class="kitap-fiyat">150 ₺</p>
+                                    <div class="karti-butonlar">
+                                        <a href="product-detail.html?id=8" class="buton buton-ikincil">İncele</a>
+                                        <button class="buton buton-ana sepete-ekle-btn" data-ad="Araba Sevdası"
+                                            data-fiyat="150">
+                                            Sepete Ekle
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- KİTAP 9 -->
+                            <div class="kitap-karti">
+                                <div class="kitap-karti-gorsel">
+
+                                    <img src="../img/solaris.jpg" alt="Solaris">
+
+                                </div>
+                                <div class="kitap-karti-icerik">
+                                    <span class="kitap-turu">Bilim Kurgu</span>
+                                    <h3 class="kitap-adi">Solaris</h3>
+                                    <p class="kitap-yazar">Stanislaw Lem</p>
+                                    <p class="kitap-fiyat">410 ₺</p>
+                                    <div class="karti-butonlar">
+                                        <a href="product-detail.html?id=9" class="buton buton-ikincil">İncele</a>
+                                        <button class="buton buton-ana sepete-ekle-btn" data-ad="Solaris"
+                                            data-fiyat="410">
+                                            Sepete Ekle
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- KİTAP 10 -->
+                            <div class="kitap-karti">
+                                <div class="kitap-karti-gorsel">
+
+                                    <img src="../img/yaban.jpeg" alt="Yaban">
+
+                                </div>
+                                <div class="kitap-karti-icerik">
+                                    <span class="kitap-turu">Türk Klasiği</span>
+                                    <h3 class="kitap-adi">Yaban</h3>
+                                    <p class="kitap-yazar">Yakup Kadri Karaosmanoğlu</p>
+                                    <p class="kitap-fiyat">170 ₺</p>
+                                    <div class="karti-butonlar">
+                                        <a href="product-detail.html?id=10" class="buton buton-ikincil">İncele</a>
+                                        <button class="buton buton-ana sepete-ekle-btn" data-ad="Yaban"
+                                            data-fiyat="170">
+                                            Sepete Ekle
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- KİTAP 11 -->
+                            <div class="kitap-karti">
+                                <div class="kitap-karti-gorsel">
+
+                                    <img src="../img/sucveceza.jpeg" alt="Suç ve Ceza">
+
+                                </div>
+                                <div class="kitap-karti-icerik">
+                                    <span class="kitap-turu">Dram</span>
+                                    <h3 class="kitap-adi">Suç ve Ceza</h3>
+                                    <p class="kitap-yazar">Fyodor Dostoyevski</p>
+                                    <p class="kitap-fiyat">425 ₺</p>
+                                    <div class="karti-butonlar">
+                                        <a href="product-detail.html?id=11" class="buton buton-ikincil">İncele</a>
+                                        <button class="buton buton-ana sepete-ekle-btn" data-ad="Suç ve Ceza"
+                                            data-fiyat="425">
+                                            Sepete Ekle
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- KİTAP 12 -->
+                            <div class="kitap-karti">
+                                <div class="kitap-karti-gorsel">
+
+                                    <img src="../img/incememed.jpeg" alt="İnce Memed">
+
+                                </div>
+                                <div class="kitap-karti-icerik">
+                                    <span class="kitap-turu">Türk Klasiği</span>
+                                    <h3 class="kitap-adi">İnce Memed</h3>
+                                    <p class="kitap-yazar">Yaşar Kemal</p>
+                                    <p class="kitap-fiyat">215 ₺</p>
+                                    <div class="karti-butonlar">
+                                        <a href="product-detail.html?id=12" class="buton buton-ikincil">İncele</a>
+                                        <button class="buton buton-ana sepete-ekle-btn" data-ad="İnce Memed"
+                                            data-fiyat="215">
+                                            Sepete Ekle
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- kitaplar-grid bitti -->
+
+
+
+                        <!-- ==================== QUİZ BÖLÜMÜ ==================== -->
+                        <section class="quiz-bolumu" id="quiz">
+                            <h2>Hangi kitap sana göre?</h2>
+                            <p>4 soruda sana en uygun kitabı bulalım.</p>
+
+                            <button class="buton buton-ana" id="quiz-baslat" type="button">
+                                Quizi Başlat
+                            </button>
+
+                            <div id="quiz-alani"></div>
+                        </section>
+                        <!-- ==================== QUİZ BİTTİ ==================== -->
+
+                    </div>
+                    </div>
+                </div>
+           </section>
+        </main>
+
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="footer-icerik">
+
+            <div class="footer-marka">
+                <span class="footer-logo">Kitap Dükkanım</span>
+                <p>En iyi kitaplar, en iyi fiyatlarla.</p>
+            </div>
+
+            <div class="footer-linkler">
+                <a href="../index.html">Ana Sayfa</a>
+                <a href="products.html">Kitaplar</a>
+                <a href="contact.html">İletişim</a>
+            </div>
+
+            <div class="footer-telif">
+                <p>&copy; 2025 KitapDükkanım. Tüm hakları saklıdır.</p>
+            </div>
+
+        </div>
+    </footer>
+    <!-- ==================== FOOTER BİTTİ ==================== -->
+
+
+    <script src="../scripts/myscript.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

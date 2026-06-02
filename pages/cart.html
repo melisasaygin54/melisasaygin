@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepet | Kitap Dükkanım</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- ==================== NAVBAR ==================== -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar-icerik">
+
+                <a href="../index.html" class="navbar-logo">
+                    <img src="../img/kitapdükkanim.png" alt="Kitap Dükkanım Logo" class="site-logo">
+                </a>
+
+
+                <ul class="navbar-linkler">
+                    <li><a href="../index.html">Ana Sayfa</a></li>
+                    <li><a href="products.html">Kitaplar</a></li>
+                    <li><a href="product-detail.html?id=1">Ürün Detay</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+
+                <a href="cart.html" class="navbar-sepet">
+                    Sepet (<span id="sepet-sayisi">0</span>)
+                </a>
+
+            </div>
+        </nav>
+    </header>
+    <!-- ==================== NAVBAR BİTTİ ==================== -->
+
+
+    <main>
+
+        <section class="sepet-bolumu">
+            <div class="kapsayici">
+
+                <h1>Sepetim</h1>
+
+                <div class="sepet-icerik">
+
+                    <!-- SOL TARAF -->
+                    <div class="sepet-listesi" id="sepet-listesi">
+                    </div>
+
+                    <!-- SAĞ TARAF -->
+                    <div class="sepet-ozet">
+                        <h3>Sipariş Özeti</h3>
+
+                        <div class="ozet-satiri">
+                            <span>Ara Toplam</span>
+                            <span id="ara-toplam">0 ₺</span>
+                        </div>
+
+                        <div class="ozet-satiri">
+                            <span>Kargo</span>
+                            <span id="kargo-ucreti">0 ₺</span>
+                        </div>
+
+                        <div class="ozet-ayirici"></div>
+
+                        <div class="ozet-satiri ozet-toplam">
+                            <span>Toplam</span>
+                            <span id="genel-toplam">0 ₺</span>
+                        </div>
+
+                        <button class="buton buton-ana buton-tam" id="siparis-btn">
+                            Siparişi Tamamla
+                        </button>
+
+                        <a href="products.html" class="alışverişe-devam">
+                            ← Alışverişe Devam Et
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+       
+        <!-- ==================== SEPET BİTTİ ==================== -->
+
+    </main>
+
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="footer-icerik">
+
+            <div class="footer-marka">
+                <span class="footer-logo">Kitap Dükkanım</span>
+                <p>En iyi kitaplar, en iyi fiyatlarla.</p>
+            </div>
+
+            <div class="footer-linkler">
+                <a href="../index.html">Ana Sayfa</a>
+                <a href="products.html">Kitaplar</a>
+                <a href="contact.html">İletişim</a>
+            </div>
+
+            <div class="footer-telif">
+                <p>&copy; 2025 KitapDükkanım. Tüm hakları saklıdır.</p>
+            </div>
+
+        </div>
+    </footer>
+    <!-- ==================== FOOTER BİTTİ ==================== -->
+
+
+    <script src="../scripts/myscript.js"></script>
+</body>
+
+</html>

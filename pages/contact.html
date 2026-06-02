@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | Kitap Dükkanım</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- ==================== NAVBAR ==================== -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar-icerik">
+
+                <a href="../index.html" class="navbar-logo">
+                    <img src="../img/kitapdükkanim.png" alt="Kitap Dükkanım Logo" class="site-logo">
+                </a>
+
+                <ul class="navbar-linkler">
+                    <li><a href="../index.html">Ana Sayfa</a></li>
+                    <li><a href="products.html">Kitaplar</a></li>
+                    <li><a href="product-detail.html?id=1">Ürün Detay</a></li>
+                    <li><a href="contact.html" class="aktif-menu">İletişim</a></li>
+                </ul>
+
+                <a href="cart.html" class="navbar-sepet">
+                    Sepet (<span id="sepet-sayisi">0</span>)
+                </a>
+   </div>
+        </nav>
+    </header>
+    <!-- ==================== NAVBAR BİTTİ ==================== -->
+    <main>
+
+        <!-- ==================== SAYFA BAŞLIĞI ==================== -->
+        <section class="sayfa-basligi">
+            <div class="kapsayici">
+                <h1>İletişim</h1>
+                <p>Sorularınız için bize ulaşın.</p>
+            </div>
+        </section>
+        <!-- ==================== SAYFA BAŞLIĞI BİTTİ ==================== -->
+   <!-- ==================== İLETİŞİM İÇERİĞİ ==================== -->
+        <section class="iletisim-bolumu">
+            <div class="kapsayici">
+  <div class="iletisim-icerik">
+                    
+                    <!-- SOL — FORM -->
+                    <form action="#" class="iletisim-form" id="iletisim-form" method="post">
+    <h2>Bize Ulaşın</h2>
+
+    <div class="form-alani">
+        <label for="ad-soyad">Ad Soyad</label>
+        <input type="text" id="ad-soyad" placeholder="Adınızı girin" required>
+    </div>
+
+    <div class="form-alani">
+        <label for="eposta">E-posta</label>
+        <input type="email" id="eposta" placeholder="ornek@mail.com" required>
+    </div>
+
+    <div class="form-alani">
+        <label for="konu">Konu</label>
+        <input type="text" id="konu" placeholder="Mesajınızın konusu" required>
+    </div>
+
+    <div class="form-alani">
+        <label for="mesaj">Mesaj</label>
+        <textarea id="mesaj" rows="5" placeholder="Mesajınızı buraya yazın..." required></textarea>
+    </div>
+
+    <button class="buton buton-ana" type="submit">
+        Gönder
+    </button>
+
+    <p id="form-mesaji" class="form-mesaji"></p>
+</form>
+                   <!-- SAĞ — BİLGİ KARTLARI -->
+                    <div class="iletisim-bilgiler">
+
+                        <h2>İletişim Bilgileri</h2>
+
+                        <div class="bilgi-karti">
+                            <div class="bilgi-ikon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="bilgi-metin">
+                                <h4>Adres</h4>
+                                <p>Bağcılar Mah. Kitap Sk. No:12</p>
+                                <p>İstanbul, Türkiye</p>
+                            </div>
+                        </div>
+
+                        <div class="bilgi-karti">
+                            <div class="bilgi-ikon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="bilgi-metin">
+                                <h4>Telefon</h4>
+                                <p>+90 (212) 123 45 67</p>
+                                <p>Hafta içi 09:00 - 18:00</p>
+                            </div>
+                        </div>
+
+                        <div class="bilgi-karti">
+                            <div class="bilgi-ikon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="bilgi-metin">
+                                <h4>E-posta</h4>
+                                <p>iletisim@kitapdükkanim.com</p>
+                                <p>7/24 yanıt veriyoruz</p>
+                            </div>
+                        </div>
+
+                        <div class="bilgi-karti">
+                            <div class="bilgi-ikon">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div class="bilgi-metin">
+                                <h4>Çalışma Saatleri</h4>
+                                <p>Pazartesi - Cumartesi</p>
+                                <p>09:00 - 18:00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+          </div>
+        </section>
+        <!-- ==================== İLETİŞİM İÇERİĞİ BİTTİ ==================== -->
+
+    </main>
+
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="footer-icerik">
+
+            <div class="footer-marka">
+                <span class="footer-logo">Kitap Dükkanım</span>
+                <p>En iyi kitaplar, en iyi fiyatlarla.</p>
+            </div>
+
+            <div class="footer-linkler">
+                <a href="../index.html">Ana Sayfa</a>
+                <a href="products.html">Kitaplar</a>
+                <a href="contact.html">İletişim</a>
+            </div>
+
+            <div class="footer-telif">
+                <p>&copy; 2025 KitapDükkanım. Tüm hakları saklıdır.</p>
+            </div>
+
+        </div>
+    </footer>
+    <!-- ==================== FOOTER BİTTİ ==================== -->
+
+
+    <script src="../scripts/myscript.js"></script>
+</body>
+
+</html>
